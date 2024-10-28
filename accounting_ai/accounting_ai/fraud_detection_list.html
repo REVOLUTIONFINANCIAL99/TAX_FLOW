@@ -1,0 +1,17 @@
+<!-- backend/accounting_ai/templates/accounting_ai/fraud_detection_list.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detección de Fraudes</title>
+</head>
+<body>
+    <h1>Resultados de Detección de Fraudes</h1>
+    <ul>
+        {% for fraud in frauds %}
+            <li>Transacción: {{ fraud.transaction.id }} - ¿Fraude?: {{ fraud.is_fraudulent }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

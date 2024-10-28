@@ -1,0 +1,17 @@
+<!-- accounting_ai/templates/accounting_ai/transaction_list.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones</title>
+</head>
+<body>
+    <h1>Lista de Transacciones</h1>
+    <ul>
+        {% for transaction in transactions %}
+            <li>{{ transaction.description }}: {{ transaction.amount }} en {{ transaction.date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
