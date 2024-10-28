@@ -52,12 +52,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "taxflow.urls"
 
+# Template configuration
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [
-            BASE_DIR / "templates",  # Directorio general para plantillas
-        ],
+        "DIRS": [BASE_DIR / 'transfers' / 'transfers'],  # Ruta a la carpeta donde está home.html
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -114,13 +113,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "/static/"
-
-# Directorios adicionales para archivos estáticos
-STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Directorio para tus archivos CSS/JS personalizados
-    BASE_DIR / "node_modules/bootstrap/dist",  # Incluir Bootstrap instalado a través de npm
-]
+STATIC_URL = "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
