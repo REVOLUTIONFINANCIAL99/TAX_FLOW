@@ -1,0 +1,12 @@
+[
+    {
+        "amount": 100.00,
+        "transaction_type": "ingreso",
+        "description": "Ingreso por venta de activos"
+    },
+    {
+        "amount": 50.00,
+        "transaction_type": "gasto",
+        "description": "Gasto en servicios"
+    }
+]
